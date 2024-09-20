@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 const Sales = () => {
-    return <div>starter tttt</div>;
+    return <div>starter pack</div>;
 };
 
 export default Sales;
