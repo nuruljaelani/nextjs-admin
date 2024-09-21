@@ -1,10 +1,10 @@
-FROM node:lts-slim AS builder
+FROM node:current-alpine AS builder
 
 WORKDIR /app
 COPY . .
 RUN npm install
 
-FROM node:lts-slim
+FROM node:current-alpine
 WORKDIR /app/fe
 COPY --from=builder /app .
 
